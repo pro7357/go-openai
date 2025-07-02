@@ -273,6 +273,8 @@ type ChatCompletionRequest struct {
 	ReasoningEffort string `json:"reasoning_effort,omitempty"`
 	// Metadata to store with the completion.
 	Metadata map[string]string `json:"metadata,omitempty"`
+	// koboldccp Genkey.
+	Genkey string `json:"genkey,omitempty"`
 	// Configuration for a predicted output.
 	Prediction *Prediction `json:"prediction,omitempty"`
 	// ChatTemplateKwargs provides a way to add non-standard parameters to the request body.
