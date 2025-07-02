@@ -204,6 +204,7 @@ type CompletionRequest struct {
 	Store bool `json:"store,omitempty"`
 	// Metadata to store with the completion.
 	Metadata        map[string]string `json:"metadata,omitempty"`
+	Genkey          string            `json:"genkey,omitempty"`
 	LogProbs        int               `json:"logprobs,omitempty"`
 	MaxTokens       int               `json:"max_tokens,omitempty"`
 	N               int               `json:"n,omitempty"`
